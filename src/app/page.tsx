@@ -22,31 +22,20 @@ export default function Home() {
   //   checkAuthentication();
   // }, [isAuthenticated, router]);
   return (
-    <div className="  text-white">
-      <div
-        className="
-             absolute top-16 lg:top-0 right-0 flex items-center justify-center"
-      >
-        <Image
-          src={"/cardamom (2).webp"}
-          width={2000}
-          height={2000}
-          alt=""
-          className="    max-w-[55vw] max-h-[55vh] object-contain"
-        />
-      </div>
+    <div className="  text-white mx-10">
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         // exit={{ y: -50, opacity: 0 }}
         transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
       >
-        <div className="md:flex   items-center ml-[2.5%]">
-          <Title title="Cardamom Live Auction Rates" />
+        <div className="  flex justify-center  flex-col items-center">
+          <Title title="GAIN" />
+          <SubTitle title="Global Agro Industry Network" />
         </div>{" "}
       </motion.div>
       <Spacer y={6} />
-      <EssentialTabContent essentialName="cardamom" showActions={false} />
+      <EssentialTabContent essentialName="rules" showActions={false} />
     </div>
   );
 }

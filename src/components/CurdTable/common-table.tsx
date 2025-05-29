@@ -158,7 +158,7 @@ export default function CommonTable({
 
   return (
     <Table
-      isStriped
+      // isStriped
       color={"secondary"}
       aria-label="Table with custom actions"
       bottomContent={

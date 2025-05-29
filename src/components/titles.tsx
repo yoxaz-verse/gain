@@ -1,6 +1,6 @@
 export default function Title({ title }: { title: string }) {
   return (
-    <h1 className="font-semibold text-[42px] md:text-[52px] text-lime-300">
+    <h1 className="font-semibold text-[42px] md:text-[64px] text-cyan-600">
       {title}
     </h1>
   );
@@ -13,7 +13,7 @@ export function SubTitle({ title }: { title: string }) {
       {words?.map((word, index) => (
         <span
           key={index}
-          className={index % 2 === 0 ? "text-warning-500" : "text-white"}
+          className={index % 2 === 0 ? "text-cyan-600" : "text-white"}
         >
           {word}{" "}
         </span>
@@ -27,7 +27,7 @@ export function SubTitleSecond({ title }: { title: string }) {
   return (
     <h1 className="text-[6px] md:text-[14px]">
       {words.map((word, index) => (
-        <span key={index} className={"text-black"}>
+        <span key={index} className={"text-white"}>
           {word}{" "}
         </span>
       ))}

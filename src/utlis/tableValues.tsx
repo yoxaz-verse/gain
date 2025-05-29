@@ -181,6 +181,50 @@ export const initialTableConfig: Record<
       inTable: true,
     },
   ],
+  // Cardamom
+
+  rules: [
+    {
+      label: "Activity",
+      type: "text",
+      key: "activity",
+      inForm: true,
+      inTable: true,
+      inEdit: true,
+    },
+    {
+      label: "Points",
+      type: "text",
+      key: "points",
+      inForm: true,
+      inTable: true,
+      inEdit: true,
+    },
+    {
+      label: "Notes",
+      type: "text",
+      key: "notes",
+      inForm: true,
+      inTable: true,
+      inEdit: true,
+    },
+
+    // {
+    //   label: "Active",
+    //   type: "checkbox",
+    //   key: "isActive",
+    //   inForm: false,
+    //   inTable: true,
+    // },
+    // {
+    //   label: "Actions",
+    //   type: "action",
+    //   key: "action",
+    //   inForm: false,
+    //   inTable: true,
+    // },
+
+  ],
   associates: [
     {
       label: "Associate Name",
